@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MUTIPLICATION CHART</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="wrapper">
+        <ul class="box-wrapper">
+          <li class="box">
+            <div class="content-wrapper">
+              <h1 class="title">九九乘法表</h1>
+              <h3 class="eng-title">MULTIPLICATION CHART</h3>
+            </div>
+          </li>
+          <li class="chart-wrapper" v-for="n in 8">
+            <div class="chart">
+              <h3 class="big-num">{{n + 1}}</h3>
+              <p class="formula" v-for="j in 9">{{n+1}}  X  {{j}}  = {{ (n+1) * j }}</p>
+            </div>
+          </li>
+        </ul>
+        <div class="footer"><p>Copyright © 2019 HexSchool. All rights reserved.</p></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "Hello"
+        }
+      });
+    </script>
+  </body>
+</html>

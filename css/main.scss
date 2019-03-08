@@ -1,0 +1,145 @@
+$green: #2EB738;
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #D8D8D8;
+    ul.box-wrapper{
+        padding: 80px;
+        list-style-type: none;
+    }
+    ul.box-wrapper::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .content-wrapper{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content-wrapper::before{
+        content: "";
+        width: 280px;
+        height: 1px;
+        background-color: #2EB738;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .content-wrapper::after{
+        content: "";
+        width: 280px;
+        height: 1px;
+        background-color: #2EB738;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+    li{
+        float: left;
+        margin-left: 23px;
+        margin-bottom: 40px;
+    }
+    li.box{
+        width: 350px;
+        height: 366px;
+        position: relative;
+    }
+    h1,h3{
+        color: $green;
+        text-align: center
+    }
+    h1.title{
+        font-size: 56px;
+    }
+    h1.title::before{
+        content: "x";
+        width: 14px;
+        height: 28px;
+        font-size: 24px;
+        position: absolute;
+        top: -15px;
+        left: 0;
+    }
+    h1.title::after{
+        content: "x";
+        width: 14px;
+        height: 28px;
+        font-size: 24px;
+        position: absolute;
+        top: -15px;
+        right: 0;
+    }
+    h3.eng-title{
+        font-size: 24px;
+    }
+    h3.eng-title::before{
+        content: "x";
+        width: 14px;
+        height: 28px;
+        font-size: 24px;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+    }
+    h3.eng-title::after{
+        content: "x";
+        width: 14px;
+        height: 28px;
+        font-size: 24px;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+    }
+    li.chart-wrapper{
+        width: 350px;
+        height: 366px;
+        position: relative;
+        background-color: #FFFFFF;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 25px;
+    }
+    .chart{
+        height: 366px;
+        padding: 64px 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .big-num{
+        display: inline-block;
+        width: 71px;
+        height: 128px;
+        margin-bottom: 0;
+        font-size: 128px;
+        line-height: 128px;
+        font-weight: bold;
+        text-shadow: 4px 3px 10px grey
+    }
+    .formula{
+        display: inline-block;
+        width: 118px;
+        height: 36px;
+        font-size: 24px;
+        margin-bottom: 0;
+        color: $green;
+    }
+    .footer{
+        background-color: $green;
+        color: #F0F0F0;
+        padding: 8px 85px 8px 0;
+        font-size: 16px;
+        p{
+            margin: 0;
+            text-align: right;
+            height: 18px;
+            line-height: 18px;
+        }
+    }
+}
